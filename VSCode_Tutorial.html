@@ -21,6 +21,7 @@
       background-attachment: fixed;
       background-size: cover;
       margin-top: 2%;
+      overflow: hidden;
     }
 
 
@@ -104,7 +105,7 @@
       display: inline-block;
       margin: none;
       cursor: pointer;
-      font-size: 24px;
+      font-size: 32px;
       font-family: 'Consolas';
     }
 
@@ -133,8 +134,21 @@
       display: inline-block;
       margin: none;
       cursor: pointer;
-      font-size: 18px;
+      font-size: 24px;
       font-family: 'Consolas';
+    }
+    .linkP{
+      font-weight: normal;
+      background-color: transparent;
+      border: none;
+      color: blue;
+      padding: 0;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: none;
+      cursor: pointer;
+      font-size: 18px;
     }
 
     .Bold {
@@ -169,13 +183,13 @@
 
   <div id = 'Installed' style="display: none;"> 
 
-    <h2>If you have definitely installed Visual Studio Code/Insiders, <button class="link1"
+    <h1>If you have definitely installed Visual Studio Code/Insiders, <button class="link1"
       onclick="document.getElementById('step1').style.display = 'block'; document.getElementById('Installed').style.display = 'none';"><u>click
-        here.</u></button></h2>
+        here.</u></button></h1>
 
-        <h2>Else, <button class="link1"
+        <h1>Else, <button class="link1"
         onclick="document.getElementById('home').style.display = 'block'; document.getElementById('Installed').style.display = 'none';"><u>go back to the homepage</u></button>,
-      and click 'No, Please Show me How.'</h2>
+      and click 'No, Please Show me How.'</h1>
 
   </div>
 
@@ -183,32 +197,40 @@
   <div id="Uninstalled" style="display: none;">
     <h1 style ="margin-bottom: 175px;">Welcome to the Installation Page!</h1>
 
-    <h2>To install Visual Studio Code, <button class="link1"
+    <h2>To install Visual Studio Code, <button class="link2"
         onclick="document.getElementById('vsc').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
           here.</u></button></h2>
 
           <br>
 
-    <h2>To install VS Insiders, <button class="link1"
+    <h2>To install VS Insiders, <button class="link2"
         onclick="document.getElementById('vsi').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
           here.</u></button></h2>
 
           <br>
 
-    <h2>To view the next step, <button class="link1"
+    <h2>To view the next step, <button class="link2"
         onclick="document.getElementById('setfile').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
           here.</u></button></h2>
 
           <br>
 
-    <h2>To return to the previous page, <button class="link1"
+    <h2>To return to the previous page, <button class="link2"
         onclick="document.getElementById('home').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
           here.</u></button></h2>
           
   </div>
 
   <div id = "vsc" style="display: none;">
-    <h1>Welcome to the Installation Guide for VS Code.</h1>
+    <h1>Welcome to the Installation Guide for VS Code. If you selected the wrong option in the previous screen, <button class="link1"
+      onclick="document.getElementById('Uninstalled').style.display = 'block'; document.getElementById('vsc').style.display = 'none';"><u>click
+        here</u></button>, otherwise, continue reading.</h1>
+        <br>
+        <h2>To install VS Code, click on <a href="https://code.visualstudio.com/download">this link</a>.</h2>
+        <p>Then, you will need to click on the blue button for your operating system (Windows, Linux, or Mac).</p>
+        <p>Once you have clicked on the appropriate button, the setup guide for VS Code will start to download. Wait for that to happen, then follow the next steps.</p>
+        <p></p>
+        
   </div>
 
 </body>
