@@ -200,7 +200,7 @@
   <div id='Installed' style="display: none;">
     <br>
     <h1>If you have definitely installed Visual Studio Code/Insiders, <button class="link1"
-        onclick="document.getElementById('step1').style.display = 'block'; document.getElementById('setupvsc').style.display = 'none';"><u>click
+        onclick="document.getElementById('setfile').style.display = 'block'; document.getElementById('Installed').style.display = 'none';"><u>click
           here.</u></button></h1>
 
     <h1>Else, <button class="link1"
@@ -222,12 +222,12 @@
     <br>
 
     <h2>To install VS Insiders, <button class="link2"
-        onclick="document.getElementById('vsi').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
+        onclick="document.getElementById('vsiinst').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
           here.</u></button></h2>
 
     <br>
 
-    <h2>To view the next step, <button class="link2"
+    <h2>To skip to the next step, <button class="link2"
         onclick="document.getElementById('setfile').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
           here.</u></button></h2>
 
@@ -240,13 +240,14 @@
   </div>
 
   <div id="vscinst" style="display: none; overflow: visible;">
+
     <br>
-    <h1>Welcome to the Installation Guide for VS Code. If you selected the wrong option in the previous screen, <button
+    <h1 style="margin-bottom: 90px;">Welcome to the Installation Guide for VS Code. If you selected the wrong option in the previous screen, <button
         class="link1"
         onclick="document.getElementById('Uninstalled').style.display = 'block'; document.getElementById('vscinst').style.display = 'none';"><u>click
           here</u></button>, otherwise, continue reading.</h1>
     <br>
-    <h2>To install the VS Code setup guide, click on <a href="https://code.visualstudio.com/download">this link</a>.</h2>
+    <h2>To install the VS Code setup, click on <a href="https://code.visualstudio.com/download">this link</a>.</h2>
     <br>
     <p>Then, you will need to click on the blue button for your operating system (Windows, Linux, or Mac).</p>
     <p>Once you have clicked on the appropriate button, the setup guide for VS Code will start to download. Wait for
@@ -261,6 +262,41 @@
     <p>You are now ready to view the <button class = "linkP" onclick = "document.getElementById('setupvsc').style.display = 'block'; document.getElementById('vscinst').style.display = 'none';"><u>next step</u></button>.</p>
     <br>
 
+  </div>
+
+  <div id="vsiinst" style="display: none; overflow: visible;">
+
+    <br>
+    <h1 style="margin-bottom: 90px;">Welcome to the Installation Guide for VS Code Insiders. If you selected the wrong option in the previous screen, <button
+        class="link1"
+        onclick="document.getElementById('Uninstalled').style.display = 'block'; document.getElementById('vsiinst').style.display = 'none';"><u>click
+          here</u></button>, otherwise, continue reading.</h1>
+    <h2>To install the VS Code Insiders setup, click on <a href="https://code.visualstudio.com/insiders/">this link</a>.</h2>
+    <br>
+    <p>The Insiders download page should automatically detect which operating system (Windows, Mac, or Linux) you are using, and will thus go straight to the appropriate download page for it.</p>
+    <p>Once you have clicked on the appropriate button, the setup guide for VS insiders will start to download. Wait for
+      that to happen, then follow the next steps.</p>
+    <p>1. Open the setup guide.</p>
+    <p>2. After reading the 'License Agreement' click the 'I accept the agreement' button and click next.</p>
+    <img class="img1" src="Iagree.png">
+    <p>3. Next, you need to tick all of the boxes that you would like to use (I recommend using all in the 'other' section, as it means that almost all files in the file explorer can be launched in VS Code) then click next again.</p>
+    <img class="img1" src="Iselect.png">
+    <p>4. Finally, click on the 'install' button, and VS insiders will start to download as an usable application.</p>
+    <img class = "img1" src = "Iinstall.png">
+    <p>You are now ready to view the <button class = "linkP" onclick = "document.getElementById('setupvsi').style.display = 'block'; document.getElementById('vscinst').style.display = 'none';"><u>next step</u></button>.</p>
+    <br>
+
+  </div>
+
+  <div id = "setfile" style="display: none;">
+    <br>
+    <h1 style="margin-bottom: 175px;">Please choose if you would like to view the next step for Visual Studio Code, Visual Studio Insiders, or if you have not actually installed either VS Code or Insiders.</h1>
+        <br>
+    <h2>I would like <button class = "link2" onclick = "document.getElementById('setupvsc').style.display = 'block'; document.getElementById('setfile').style.display = 'none';"><u>the next step for VS Code</u></button></h2>
+    <br>
+    <h2>I would like <button class = "link2" onclick = "document.getElementById('setupvsi').style.display = 'block'; document.getElementById('setfile').style.display = 'none';"><u>the next step for VS Insiders</u></button></h2>
+    <br>
+    <h2>I have not installed either program, <button class = "link2" onclick = "document.getElementById('Uninstalled').style.display = 'block'; document.getElementById('setfile').style.display = 'none';"><u>please show me how</u>.</button></h2>
   </div>
 
 </body>
