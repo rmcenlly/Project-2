@@ -3,45 +3,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-  <meta name="viewport" content="width-devicewidth, initial scale = 1">
-  <title>All Saints Maps</title>
+  <meta name="viewport" content="width-devicewidth, initial scale=1">
+  <title>VSCodeTutorial</title>
   <style>
     html,
     body {
       height: 100%;
+      min-height: 100%;
       margin: 0;
       padding: 0;
     }
 
     body {
+      margin: 0;
+      padding: 0;
       text-align: center;
       background-image: url(vsl.png);
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
       background-size: cover;
-      margin-top: 2%;
-      overflow: hidden;
     }
 
 
     h1 {
+      margin: 0;
       font-weight: normal;
       font-family: 'Consolas';
-      color: #747474;
+      color: #dedcdb;
     }
 
     h2 {
       font-weight: normal;
       font-family: 'Consolas';
-      color: #747474;
+      color: #dedcdb;
     }
 
     p {
       font-weight: normal;
       font-family: 'Consolas';
-      color: #747474;
+      color: #dedcdb;
       font-size: 18px;
+      margin-left: 200px;
+      margin-right: 200px;
     }
 
     .button1 {
@@ -107,6 +111,8 @@
       cursor: pointer;
       font-size: 32px;
       font-family: 'Consolas';
+      -webkit-text-stroke-width: 0;
+      -webkit-text-stroke-color: none;
     }
 
     /*.link1:hover {
@@ -136,8 +142,11 @@
       cursor: pointer;
       font-size: 24px;
       font-family: 'Consolas';
+      -webkit-text-stroke-width: 0;
+      -webkit-text-stroke-color: none;
     }
-    .linkP{
+
+    .linkP {
       font-weight: normal;
       background-color: transparent;
       border: none;
@@ -149,17 +158,24 @@
       margin: none;
       cursor: pointer;
       font-size: 18px;
+      font-family: 'Consolas';
+      -webkit-text-stroke-width: 0;
+      -webkit-text-stroke-color: none;
     }
 
     .Bold {
       font-size: 15px;
       font-weight: bold;
     }
+    .img1 {
+      width: 500px;
+    }
   </style>
 </head>
 
 <body>
-  <div id="home" class="overflow: hidden">
+  <div id="home">
+    <br>
     <h1>Hello, Welcome to the Tutorial for VS Code/Insiders.</h1>
 
     <h2>First Thing's First, Have you Already Downloaded VS Code or Insiders</h2>
@@ -181,56 +197,70 @@
   </div>
 
 
-  <div id = 'Installed' style="display: none;"> 
-
+  <div id='Installed' style="display: none;">
+    <br>
     <h1>If you have definitely installed Visual Studio Code/Insiders, <button class="link1"
-      onclick="document.getElementById('step1').style.display = 'block'; document.getElementById('Installed').style.display = 'none';"><u>click
-        here.</u></button></h1>
+        onclick="document.getElementById('step1').style.display = 'block'; document.getElementById('setupvsc').style.display = 'none';"><u>click
+          here.</u></button></h1>
 
-        <h1>Else, <button class="link1"
-        onclick="document.getElementById('home').style.display = 'block'; document.getElementById('Installed').style.display = 'none';"><u>go back to the homepage</u></button>,
+    <h1>Else, <button class="link1"
+        onclick="document.getElementById('home').style.display = 'block'; document.getElementById('Installed').style.display = 'none';"><u>go
+          back to the homepage</u></button>,
       and click 'No, Please Show me How.'</h1>
 
   </div>
 
 
   <div id="Uninstalled" style="display: none;">
-    <h1 style ="margin-bottom: 175px;">Welcome to the Installation Page!</h1>
+    <br>
+    <h1 style="margin-bottom: 175px;">Welcome to the Installation Page!</h1>
 
     <h2>To install Visual Studio Code, <button class="link2"
-        onclick="document.getElementById('vsc').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
+        onclick="document.getElementById('vscinst').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
           here.</u></button></h2>
 
-          <br>
+    <br>
 
     <h2>To install VS Insiders, <button class="link2"
         onclick="document.getElementById('vsi').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
           here.</u></button></h2>
 
-          <br>
+    <br>
 
     <h2>To view the next step, <button class="link2"
         onclick="document.getElementById('setfile').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
           here.</u></button></h2>
 
-          <br>
+    <br>
 
     <h2>To return to the previous page, <button class="link2"
         onclick="document.getElementById('home').style.display = 'block'; document.getElementById('Uninstalled').style.display = 'none';"><u>click
           here.</u></button></h2>
-          
+
   </div>
 
-  <div id = "vsc" style="display: none;">
-    <h1>Welcome to the Installation Guide for VS Code. If you selected the wrong option in the previous screen, <button class="link1"
-      onclick="document.getElementById('Uninstalled').style.display = 'block'; document.getElementById('vsc').style.display = 'none';"><u>click
-        here</u></button>, otherwise, continue reading.</h1>
-        <br>
-        <h2>To install VS Code, click on <a href="https://code.visualstudio.com/download">this link</a>.</h2>
-        <p>Then, you will need to click on the blue button for your operating system (Windows, Linux, or Mac).</p>
-        <p>Once you have clicked on the appropriate button, the setup guide for VS Code will start to download. Wait for that to happen, then follow the next steps.</p>
-        <p></p>
-        
+  <div id="vscinst" style="display: none; overflow: visible;">
+    <br>
+    <h1>Welcome to the Installation Guide for VS Code. If you selected the wrong option in the previous screen, <button
+        class="link1"
+        onclick="document.getElementById('Uninstalled').style.display = 'block'; document.getElementById('vscinst').style.display = 'none';"><u>click
+          here</u></button>, otherwise, continue reading.</h1>
+    <br>
+    <h2>To install the VS Code setup guide, click on <a href="https://code.visualstudio.com/download">this link</a>.</h2>
+    <br>
+    <p>Then, you will need to click on the blue button for your operating system (Windows, Linux, or Mac).</p>
+    <p>Once you have clicked on the appropriate button, the setup guide for VS Code will start to download. Wait for
+      that to happen, then follow the next steps.</p>
+    <p>1. Open the setup guide.</p>
+    <p>2. After reading the 'License Agreement' click the 'I accept the agreement' button and click next.</p>
+    <img class="img1" src="agree.png">
+    <p>3. Next, you need to tick all of the boxes that you would like to use (I recommend using all in the 'other' section, as it means that almost all files in the file explorer can be launched in VS Code) then click next again.</p>
+    <img class="img1" src="select.png">
+    <p>4. Finally, click on the 'install' button, and VS Code will start to download as an usable application.</p>
+    <img class = "img1" src = "install.png">
+    <p>You are now ready to view the <button class = "linkP" onclick = "document.getElementById('setupvsc').style.display = 'block'; document.getElementById('vscinst').style.display = 'none';"><u>next step</u></button>.</p>
+    <br>
+
   </div>
 
 </body>
