@@ -281,9 +281,10 @@
     <img class="img1" src="Iagree.png">
     <p>3. Next, you need to tick all of the boxes that you would like to use (I recommend using all in the 'other' section, as it means that almost all files in the file explorer can be launched in VS Code) then click next again.</p>
     <img class="img1" src="Iselect.png">
-    <p>4. Finally, click on the 'install' button, and VS insiders will start to download as an usable application.</p>
+    <p>4. Click on the 'install' button, and VS insiders will start to download as an usable application.</p>
     <img class = "img1" src = "Iinstall.png">
-    <p>You are now ready to view the <button class = "linkP" onclick = "document.getElementById('setupvsi').style.display = 'block'; document.getElementById('vscinst').style.display = 'none';"><u>next step</u></button>.</p>
+    
+    <p>You are now ready to view the <button class = "linkP" onclick = "document.getElementById('setupvsi').style.display = 'block'; document.getElementById('vscinst').style.display = 'none';"><u>next step</u>.</button></p>
     <br>
 
   </div>
@@ -292,11 +293,25 @@
     <br>
     <h1 style="margin-bottom: 175px;">Please choose if you would like to view the next step for Visual Studio Code, Visual Studio Insiders, or if you have not actually installed either VS Code or Insiders.</h1>
         <br>
-    <h2>I would like <button class = "link2" onclick = "document.getElementById('setupvsc').style.display = 'block'; document.getElementById('setfile').style.display = 'none';"><u>the next step for VS Code</u></button></h2>
+    <h2>I would like <button class = "link2" onclick = "document.getElementById('setupvsc').style.display = 'block'; document.getElementById('setfile').style.display = 'none';"><u>the next step for VS Code</u>.</button></h2>
     <br>
-    <h2>I would like <button class = "link2" onclick = "document.getElementById('setupvsi').style.display = 'block'; document.getElementById('setfile').style.display = 'none';"><u>the next step for VS Insiders</u></button></h2>
+    <h2>I would like <button class = "link2" onclick = "document.getElementById('setupvsi').style.display = 'block'; document.getElementById('setfile').style.display = 'none';"><u>the next step for VS Insiders</u>.</button></h2>
     <br>
     <h2>I have not installed either program, <button class = "link2" onclick = "document.getElementById('Uninstalled').style.display = 'block'; document.getElementById('setfile').style.display = 'none';"><u>please show me how</u>.</button></h2>
+  </div>
+  <div id = "setupvsc" style="display: none;">
+    <br>
+    <h1>If you intended to click one of the other options, please <button class = "link1" onclick = "document.getElementById('setfile').style.display = 'block'; document.getElementById('setupvsc').style.display = 'none';"><u>click here</u>,</button> otherwise continue reading to find out how to set up VS Code.</h1>
+    <br>
+  </div>
+  <div id = "setupvsi" style = "display: none;">
+    <br>
+    <h1 style="margin-bottom: 90px;">If you intended to click one of the other options, please <button class = "link1" onclick = "document.getElementById('setfile').style.display = 'block'; document.getElementById('setupvsi').style.display = 'none';"><u>click here</u>,</button> otherwise continue reading to find out how to set up VS Insiders.</h1>
+    <br>
+    <p>Step 1. Find and open VS Insiders (you can do this by pressing the window/mac key depending on your device, and typing 'vs' to search, and clicking on the app titled "Visual Studio Code - Insiders").</p>
+    <img class="img1" src="vsisearch.png">
+    <br>
+    <p>Step 2. Upon clicking on the app, Insiders will open, which will show a screen with a few startup options (</p>
   </div>
 
 </body>
