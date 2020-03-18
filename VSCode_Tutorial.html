@@ -4,7 +4,9 @@
 
 <head>
   <meta name="viewport" content="width-devicewidth, initial scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
   <title>VSCodeTutorial</title>
+  
   <style>
     html,
     body {
@@ -129,6 +131,7 @@
       font-size: 22px;
       font-family: 'Consolas';
     }*/
+
     .link2 {
       font-weight: normal;
       background-color: transparent;
@@ -284,7 +287,7 @@
     <p>4. Click on the 'install' button, and VS insiders will start to download as an usable application.</p>
     <img class = "img1" src = "Iinstall.png">
     
-    <p>You are now ready to view the <button class = "linkP" onclick = "document.getElementById('setupvsi').style.display = 'block'; document.getElementById('vscinst').style.display = 'none';"><u>next step</u>.</button></p>
+    <p>You are now ready to view the <button class = "linkP" onclick = "document.getElementById('setupvsi').style.display = 'block'; document.getElementById('vsi inst').style.display = 'none';"><u>next step</u>.</button></p>
     <br>
 
   </div>
@@ -308,10 +311,34 @@
     <br>
     <h1 style="margin-bottom: 90px;">If you intended to click one of the other options, please <button class = "link1" onclick = "document.getElementById('setfile').style.display = 'block'; document.getElementById('setupvsi').style.display = 'none';"><u>click here</u>,</button> otherwise continue reading to find out how to set up VS Insiders.</h1>
     <br>
-    <p>Step 1. Find and open VS Insiders (you can do this by pressing the window/mac key depending on your device, and typing 'vs' to search, and clicking on the app titled "Visual Studio Code - Insiders").</p>
+    <p>1. Find and open VS Insiders (you can do this by pressing the window/mac key depending on your device, and typing 'vs' to search, and clicking on the app titled "Visual Studio Code - Insiders").</p>
     <img class="img1" src="vsisearch.png">
     <br>
-    <p>Step 2. Upon clicking on the app, Insiders will open, which will show a screen with a few startup options (</p>
+    <p>2. Upon clicking on the app, Insiders will open, which will show a screen with a few startup options (If you are using it for the first time you may not have any recent files).</p>
+    <img class = "img1" src = "Iwelcome.png">
+    <br>
+    <p>3. there are two ways of going about this now, I would recommend opening a folder, as it means that you can create files into the folder as well.</p>
+    <div id="IFolder">
+      <br>
+    <p>A) <button class = "linkP" onclick = "document.getElementById('Iopenfolder').style.display = 'block'; document.getElementById('IFile').style.display = 'none';"><u>Opening a folder.</u></button></p>
+    </div>
+    <div id = "IFile">
+    <br>
+    <p>B) <button class = "linkP" onclick = "document.getElementById('Iopenfile').style.display = 'block'; document.getElementById('setupvsi').style.display = 'none';"><u>Opening a single file.</u></button></p>
+    </div>
+    <br>
+  </div>
+  <div id = "Iopenfolder" style="display: none;">
+    <p>If you meant to open an individual file, <button class = "linkP" onclick = "document.getElementById('setupvsi').style.display = 'block'; document.getElementById('IFile').style.display = 'block'; document.getElementById('Iopenfile').style.display = 'block'; document.getElementById('Iopenfolder').style.display = 'none'; document.getElementById('IFolder').style.display = 'none';"><u>click here</u>,</button> else, continue reading.</p>
+    <br>
+    <p>To open a new folder, all you need</p>
+    <br>
+  </div>
+
+  <div id="Iopenfile" style="display: none;">
+  <br>
+  <p>If you meant to open an individual folder, <button class = "linkP" onclick = "document.getElementById('setupvsi').style.display = 'block'; document.getElementById('IFolder').style.display = 'block'; document.getElementById('Iopenfolder').style.display = 'block'; document.getElementById('Iopenfile').style.display = 'none'; document.getElementById('IFile').style.display = 'none';"><u>click here</u>,</button> else, continue reading.</p> 
+  <br>
   </div>
 
 </body>
