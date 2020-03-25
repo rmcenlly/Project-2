@@ -1,3 +1,0 @@
-
-    <h2>To install Visual Studio Code, <a href="https://code.visualstudio.com/download">click here.</a></h2>
-    <h2>To install VS Code Insiders, <a href="https://code.visualstudio.com/insiders">click here.</a></h2>
